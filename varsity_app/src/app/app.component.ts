@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  navigate;any;
+  constructor() {
+    this.sideMenu();
+  }
+  sideMenu()
+  {
+    this.navigate =
+    [
+      {
+        title : "Home",
+        url   : "/home",
+        icon  : "home"
+      },
+      {
+        title : "Registration",
+        url   : "/sign-up",
+        icon  : "signin"
+      },
+      {
+        title : "Contacts",
+        url   : "/contacts",
+        icon  : "call"
+      },
+    ]
+  }
+
 }
