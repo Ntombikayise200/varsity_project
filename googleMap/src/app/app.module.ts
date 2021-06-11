@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { LocationComponent } from './components/location/location.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { HomeComponent } from './components/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LocationComponent
+    LocationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyC6CWqBSRI5GILTJr0G3SFnYM0fAZMFu7o'
-      // libraries:['Johannesburg']
+    
     })
   ],
   providers: [],
